@@ -13,6 +13,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+// 一个修改后的中文敏感词校验方法，
+// DFA算法是初始化后把数据整合为 {白={粉={isEnd=1}, isEnd=0}, 大={麻={isEnd=1}, isEnd=0, 坏={蛋={isEnd=1}, isEnd=0}}}样式的算法。
+// 做中文敏感词计算甚佳
 public class Jdbcdfa {
 	
 	public final static String driverClassName = "org.postgresql.Driver";
